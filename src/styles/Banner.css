@@ -15,8 +15,14 @@
 
 .banner ul {
     display: flex;
+    font-size: 24px;
     padding: 0px;
     gap: 30px;
     align-items: center;
     list-style: none;
+}
+
+.banner ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
