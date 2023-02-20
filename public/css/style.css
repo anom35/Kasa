@@ -215,17 +215,12 @@ header {
 
 
 /* 1/4 */
-.text-carrousel-1-4.flex-end {
+.text-carrousel-1-4.flex-end.montserrat-18 {
 	position: absolute;
 	left: 48.95%;
 	right: 49.11%;
 	top: 86.19%;
 	bottom: 6.01%;
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 142.6%;
 	/* or 26px */
 	text-align: center;
 	color: #FFFFFF;
@@ -237,3 +232,193 @@ header {
 	mix-blend-mode: normal;
 	border-radius: 25px;
 }
+
+
+
+
+
+/* DROPDOWN LARGE ----------------------------------------------*/
+
+.dropdown-large {
+	position: absolute;
+	width: 1023px;
+	height: 184px;
+	left: 55px;
+	top: 1023px;
+}
+
+.dropdown-large-vector {
+	position: absolute;
+	left: 96.76%;
+	right: 1.86%;
+	top: 8.74%;
+	bottom: 78.3%;
+	background: #FFFFFF;
+	transform: rotate(90deg);
+}
+
+.dropdown-large-message.module-commun-2 {
+	position: absolute;
+	left: 1.76%;
+	right: 2.64%;
+	top: 40.22%;
+	bottom: 10.33%;
+	font-weight: 400;
+	/* or 34px */
+	color: #FF6060;
+}
+
+.dropdown-large-respect.module-commun-2.flex-center {
+	position: absolute;
+	left: 1.77%;
+	right: 88.46%;
+	top: 3.12%;
+	bottom: 78.4%;
+	font-weight: 500;
+	/* or 34px */
+	color: #FFFFFF;
+}
+
+.rectangle-4-1 {
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 74.46%;
+	background: #FF6060;
+	border-radius: 5px;
+}
+
+
+.rectangle-4-2 {
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 20.65%;
+	bottom: 0%;
+	background: #F7F7F7;
+	border-radius: 5px;
+}
+
+
+/* DROPDOWN LARGE FIN  -----------------------------------------*/
+
+
+
+
+/* DROPDOWN CLOSE LARGE  -----------------------------------------*/
+
+.dropdown-large-close {
+	position: absolute;
+	width: 1023px;
+	height: 47px;
+	left: 55px;
+	top: 910px;
+}
+
+.dropdown-large-close-text.module-commun-2.flex-center {
+	position: absolute;
+	left: 1.77%;
+	right: 88.75%;
+	top: 11.93%;
+	bottom: 15.72%;
+	font-weight: 500;
+	/* or 34px */
+	color: #FFFFFF;
+}
+
+/* arrow_back_ios-24px 2   DLC = Dropdown Large Close */
+.dlc-arrow_back_ios-24px-2 {
+	position: absolute;
+	left: 94.23%;
+	right: 2.94%;
+	top: 80.77%;
+	bottom: -42.3%;
+	transform: rotate(-90deg);
+}
+
+.dlc-vector-1 {
+	position: absolute;
+	left: 8.75%;
+	right: 42.63%;
+	top: 75.67%;
+	bottom: -58.17%;
+	background: #FFFFFF;
+	transform: rotate(-90deg)
+}
+
+.dlc-vector-2 {
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 100.01%;
+	bottom: -100.01%;
+	opacity: 0.87;
+	transform: rotate(-90deg);
+}
+
+.dlc-rectangle-4.thumb-m {
+	background: #FF6060;
+	border-radius: 5px;
+}
+
+/* DROPDOWN CLOSE LARGE FIN  -----------------------------------------*/
+
+
+
+
+/* DROPDOWN CLOSE  -----------------------------------------*/
+
+.dropdown-close {
+	position: absolute;
+	width: 582px;
+	height: 52px;
+	left: 675px;
+	top: 557px;
+}
+
+.equipements.flex-center.montserrat-18 {
+	position: absolute;
+	left: 3.44%;
+	right: 75.26%;
+	top: 25%;
+	bottom: 25%;
+	/* identical to box height, or 26px */
+	color: #FFFFFF;
+}
+
+.dc-arrow_back_ios-24px-2 {
+	position: absolute;
+	left: 92.96%;
+	right: 1.55%;
+	top: 80.77%;
+	bottom: -42.31%;
+	transform: rotate(-90deg);
+}
+
+.dc-vector-1 {
+	position: absolute;
+	left: 8.75%;
+	right: 42.63%;
+	top: 75.67%;
+	bottom: -58.17%;
+	background: #FFFFFF;
+	transform: rotate(-90deg);
+}
+
+.dc-vector-2 {
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 100%;
+	bottom: -100%;
+	opacity: 0.87;
+	transform: rotate(-90deg);
+}
+
+.dc-rectangle-4.thumb-m {
+	background: #FF6060;
+	border-radius: 10px;
+}
+
+/* DROPDOWN CLOSE FIN  -----------------------------------------*/
