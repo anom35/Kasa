@@ -1,0 +1,22 @@
+.banner {
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner img {
+    width: auto;
+}
+
+.banner nav {
+    display: flex;
+    color: #FF6060;
+}
+
+.banner ul {
+    display: flex;
+    padding: 0px;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+}
