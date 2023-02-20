@@ -1,0 +1,27 @@
+/* portions de code communes à plusieurs classes */
+
+.thumb-m {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.module-commun {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 142.6%;
+}
+
+/* Vector 1 */
+.vectore-1-2-m.thumb-m {
+    opacity: 0.87;
+}
+
+.flex-end {
+    display: flex;
+    align-items: flex-end;
+}
