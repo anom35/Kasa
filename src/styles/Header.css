@@ -26,3 +26,9 @@
     position: relative;
     color: #FFF;
 }
+
+@media (max-width: 646px) {
+    .header {
+        margin-top: 100px;
+    }
+}

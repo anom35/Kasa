@@ -26,3 +26,17 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+@media (max-width: 646px) {
+    .banner {
+        display: block;
+    }
+
+    .banner img {
+        height: 68px;
+    }
+
+    .banner nav {
+        justify-content: center;
+    }
+}
