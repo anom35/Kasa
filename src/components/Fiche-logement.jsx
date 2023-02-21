@@ -1,9 +1,10 @@
 import React from 'react'
 
-function ficheLogement() {
+function ficheLogement({ cover, title }) {
     return (
         <div className='fiche-logement'>
-            <h3>Titre de la location</h3>        
+            <img src={cover} alt={title} />
+            <h3>{title}</h3>
         </div>
     )
 }

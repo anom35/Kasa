@@ -1,13 +1,29 @@
 .fiche-logement {
+    position: relative;
     width: 340px;
     height: 340px;
-    background: var(--colorRed);
-    background: linear-gradient(180deg, rgba(255, 96, 96, 1) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: linear-gradient(180deg, rgba(255, 96, 96, 1) 0%, rgba(0, 0, 0, 0.3) 100%);
     border-radius: 10px;
 }
 
+.fiche-logement img {
+    height: 268px;
+}
+
 .fiche-logement h3 {
+    display: flex;
+    height: 52px;
     font-size: 18px;
     line-height: 142.6%;
-    margin: 20px;
+    margin: 0px 20px;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+}
+
+.fiche-logement::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: rgba(255, 96, 96, 0.5);
 }
