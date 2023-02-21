@@ -1,6 +1,11 @@
 .logements {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 60px;
     background: #F7F7F7;
     border-radius: 25px;
     margin-top: 30px;
     height: 829px;
+    padding: 56px 50px;
 }

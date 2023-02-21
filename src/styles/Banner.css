@@ -10,7 +10,7 @@
 
 .banner nav {
     display: flex;
-    color: #FF6060;
+    color: var(--colorRed);
 }
 
 .banner ul {

@@ -1,12 +1,17 @@
 import React from 'react'
-import ficheLogement from '../components/Fiche-logement'
+import Fiche from '../components/Fiche-logement'
 import "../styles/Logements.css"
 import "../styles/Fiche-logement.css"
 
 function Logements() {
   return (
     <div className='logements'>
-        <ficheLogement />
+        <Fiche />
+        <Fiche />
+        <Fiche />
+        <Fiche />
+        <Fiche />
+        <Fiche />
     </div>
   )
 }
