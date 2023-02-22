@@ -1,10 +1,13 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 
-function ficheLogement({ cover, title }) {
+function ficheLogement({ key, cover, title }) {
     return (
         <div className='fiche-logement'>
-            <img src={cover} alt={title} />
-            <h3>{title}</h3>
+            <Link to="/Logement" state={{ id: key }}>
+                <img src={cover} alt={title} />
+                <h3>{title}</h3>
+            </Link>
         </div>
     )
 }

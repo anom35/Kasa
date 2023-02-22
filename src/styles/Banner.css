@@ -11,17 +11,17 @@
     margin: auto 0px;
 }
 
-.banner nav {
+.banner nav a {
     display: flex;
     color: var(--colorRed);
+    text-decoration: none;
+    font-size: 24px;
 }
 
 .banner ul {
     display: flex;
-    font-size: 24px;
     padding: 0px;
     gap: 30px;
-    align-items: center;
     list-style: none;
 }
 

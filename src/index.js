@@ -14,18 +14,15 @@ const router = createBrowserRouter([
     {
       path: "/",
       element: <App />,
+      errorElement: <Error404 />,
     },
     {
-      path: "/logements",
+      path: "/logement",
       element: <Logement />,
     },
     {
       path: "/about",
       element: <About />,
-    },
-    {
-      path: "/error",
-      element: <Error404 />,
     },
   ]);
 

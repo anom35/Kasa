@@ -9,7 +9,7 @@ function Error404() {
     console.log(error)
     return (
         <div className='error404'>
-            <Banner className="banner" />   
+            <Banner />   
             <p>404</p>     
         </div>
     )

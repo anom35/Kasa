@@ -10,6 +10,10 @@
     padding: 56px 50px;
 }
 
+.logements a {
+    text-decoration: none;
+}
+
 @media (max-width: 660px) {
     .logements {
         background: #FFF;
