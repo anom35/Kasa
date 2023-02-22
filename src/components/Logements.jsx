@@ -11,7 +11,7 @@ function Logements() {
             {
                 records.map( record => {
                     return (
-                        <Fiche cover={record.cover} title={record.title} />
+                        <Fiche key={record.id} cover={record.cover} title={record.title} />
                     )
                 })
             }

@@ -1,0 +1,16 @@
+.footer {
+    display: grid;
+    place-items: center;
+    /* align-items: center; */
+
+    height: 209px;
+    background: black;
+    color: white;
+    font-size: 24px;
+}
+
+.footer img {
+    padding-top: 40px;
+    height: 40px;
+    width: 122px;
+}
