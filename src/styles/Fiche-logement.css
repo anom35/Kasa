@@ -2,7 +2,6 @@
     position: relative;
     width: 340px;
     height: 340px;
-    /* background-color: var(--colorRed); */
     background-image: linear-gradient(180deg, #FF6060, #FF6060, #FF6060, #833131);
     border-radius: 10px;
 }
@@ -21,4 +20,26 @@
     align-items: center;
     overflow: hidden;
     color: white;
+}
+
+@media (max-width: 400px) {
+    .fiche-logement {
+        width: 335px;
+        height: 255px;
+    }
+
+    .fiche-logement h3 {
+        height: 60px;
+        margin: 0px 15px;
+    }
+
+    .fiche-logement img {
+        height: 188px;
+    }
+}
+
+
+.fiche-logement:hover {
+    box-shadow: 0px 0px 20px #e37f7f;
+    cursor: pointer;
 }

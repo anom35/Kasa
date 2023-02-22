@@ -2,10 +2,13 @@
     height: 68px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .banner img {
     width: auto;
+    height: 68px;
+    margin: auto 0px;
 }
 
 .banner nav {
@@ -27,16 +30,31 @@
     text-decoration: underline;
 }
 
-@media (max-width: 646px) {
-    .banner {
-        display: block;
+
+@media (min-width: 451px) and (max-width: 480px) {
+    .banner ul {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner ul {
+        font-size: 14px;
     }
 
     .banner img {
-        height: 68px;
+        height: 45px;
     }
 
     .banner nav {
         justify-content: center;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .banner ul {
+        font-size: 12px;
+        gap: 10px;
     }
 }
