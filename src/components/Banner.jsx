@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom"
 import logo from '../assets/logo.png'
 import '../styles/Banner.css'
 
@@ -7,8 +8,8 @@ function Banner() {
             <img src={logo} alt='Logo du site Kasa' />
             <nav>
                 <ul>
-                    <li>Accueil</li>
-                    <li>A Propos</li>
+                    <Link to="/"><li>Accueil</li></Link>
+                    <Link to="/about"><li>A Propos</li></Link>
                 </ul>
             </nav>
         </div>

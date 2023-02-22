@@ -1,0 +1,10 @@
+.error404 {
+    color: var(--colorRed);
+
+}
+
+.error404 p {
+    font-style: 288px;
+    align-items: center;
+    margin-inline: auto;
+}
