@@ -2,8 +2,8 @@
     position: relative;
     width: 340px;
     height: 340px;
-    background-color: var(--colorRed);
-    background-image: linear-gradient(180deg, #863535, #FF6060);
+    /* background-color: var(--colorRed); */
+    background-image: linear-gradient(180deg, #FF6060, #FF6060, #FF6060, #833131);
     border-radius: 10px;
 }
 

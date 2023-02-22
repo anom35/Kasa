@@ -2,6 +2,7 @@
 import Banner from './Banner'
 import Header from './Header'
 import Logements from './Logements'
+import Footer from './Footer'
 import '../styles/App.css';
 import '../styles/Style.css';
 
@@ -11,6 +12,7 @@ function App() {
         <Banner />
         <Header />
         <Logements />
+        <Footer />
     </div>
   );
 }
