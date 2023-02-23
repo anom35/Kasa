@@ -1,8 +1,13 @@
 import React from 'react'
+import Navbar from "./Navbar"
 
-function Logement(props) {
+function Logement({id}) {
   return (
-    <div>Logement: {props.id}</div>
+    <div>
+    <Navbar />
+      Logement: {id}
+      {console.log(id)}
+    </div>
   )
 }
 
