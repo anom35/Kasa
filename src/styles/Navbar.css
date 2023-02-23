@@ -1,0 +1,60 @@
+.banner {
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.banner img {
+    width: auto;
+    height: 68px;
+    margin: auto 0px;
+}
+
+.banner nav a {
+    display: flex;
+    color: var(--colorRed);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.banner ul {
+    display: flex;
+    padding: 0px;
+    gap: 30px;
+    list-style: none;
+}
+
+.banner ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+@media (min-width: 451px) and (max-width: 480px) {
+    .banner ul {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner ul {
+        font-size: 14px;
+    }
+
+    .banner img {
+        height: 45px;
+    }
+
+    .banner nav {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .banner ul {
+        font-size: 12px;
+        gap: 10px;
+    }
+}

@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Logement(id) {
+function Logement(props) {
   return (
-    <div>Logement: {id}</div>
+    <div>Logement: {props.id}</div>
   )
 }
 

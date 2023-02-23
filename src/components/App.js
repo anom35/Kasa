@@ -1,6 +1,6 @@
 // import { useState, useEffect } from 'react'
+import Navbar from './Navbar'
 import Banner from './Banner'
-import Header from './Header'
 import Logements from './Logements'
 import Footer from './Footer'
 import Main from './Main'
@@ -11,8 +11,8 @@ function App() {
   return (
     <div>
       <Main>
+        <Navbar />
         <Banner />
-        <Header />
         <Logements />
       </Main>
       <Footer />

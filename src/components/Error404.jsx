@@ -1,6 +1,6 @@
 import React from 'react'
-import Banner from './Banner'
-import '../styles/Banner.css'
+import Navbar from './Navbar'
+import '../styles/Navbar.css'
 import { useRouteError } from "react-router-dom";
 import "../styles/Error404.css"
 
@@ -9,7 +9,7 @@ function Error404() {
     console.log(error)
     return (
         <div className='error404'>
-            <Banner />   
+            <Navbar />   
             <p>404</p>     
         </div>
     )

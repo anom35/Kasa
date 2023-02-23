@@ -1,19 +1,11 @@
-import {Link} from "react-router-dom"
-import logo from '../assets/logo.png'
 import '../styles/Banner.css'
 
-function Banner() {
-	return (
-        <div className='banner'>
-            <img src={logo} alt='Logo du site Kasa' />
-            <nav>
-                <ul>
-                    <Link to="/"><li>Accueil</li></Link>
-                    <Link to="/about"><li>A Propos</li></Link>
-                </ul>
-            </nav>
+function Base() {
+    return (
+        <div className='header'>
+            <h1>Chez vous, partout et ailleurs</h1>
         </div>
     )
 }
 
-export default Banner
+export default Base
