@@ -1,4 +1,4 @@
-.header {
+.banner {
     margin-top: 50px;
     position: relative;
     width: 100%;
@@ -12,7 +12,7 @@
     justify-content: center;
 }
 
-.header::before {
+.banner::before {
     position: absolute;
     content: "";
     inset: 0;
@@ -22,27 +22,27 @@
     border-radius: 25px;
 }
 
-.header h1 {
+.banner h1 {
     position: relative;
     color: #FFF;
     padding-inline: 20px;
 }
 
 @media (max-width: 728px) {
-    .header h1 {
+    .banner h1 {
         font-size: 1.5rem;
     }
 }
 
 @media (max-width: 646px) {
-    .header {
+    .banner {
         margin-top: 0px;
         height: 111px;
     }
 }
 
 @media (max-width: 450px) {
-    .header h1 {
+    .banner h1 {
         font-size: 1rem;
     }
 }

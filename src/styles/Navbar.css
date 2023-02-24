@@ -1,60 +1,61 @@
-.banner {
+.navbar {
     height: 68px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
 
-.banner img {
+.navbar {
+    align-items: center;
+}
+
+.navbar img {
     width: auto;
     height: 68px;
     margin: auto 0px;
 }
 
-.banner nav a {
+.navbar nav a {
     display: flex;
     color: var(--colorRed);
     text-decoration: none;
     font-size: 24px;
 }
 
-.banner ul {
+.navbar ul {
     display: flex;
     padding: 0px;
     gap: 30px;
     list-style: none;
 }
 
-.banner ul li:hover {
+.navbar ul li:hover {
     cursor: pointer;
     text-decoration: underline;
 }
 
 
 @media (min-width: 451px) and (max-width: 480px) {
-    .banner ul {
+    .navbar nav a {
         font-size: 18px;
     }
 }
 
 @media (max-width: 450px) {
-    .banner ul {
+    .navbar nav a {
         font-size: 14px;
     }
 
-    .banner img {
+    .navbar ul {
+        gap: 15px;
+    }
+
+    .navbar img {
         height: 45px;
     }
 
-    .banner nav {
+    .navbar nav {
         justify-content: center;
     }
 
-}
-
-@media (max-width: 380px) {
-    .banner ul {
-        font-size: 12px;
-        gap: 10px;
-    }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
-import Fiche from '../components/Fiche-logement'
+import Fiche from './FicheLogement'
 import "../styles/Logements.css"
-import "../styles/Fiche-logement.css"
+import "../styles/FicheLogement.css"
 import records from "../datas/logements.json"
 
 function Logements() {
@@ -11,7 +11,7 @@ function Logements() {
             {
                 records.map( record => {
                     return (
-                        <Fiche key={record.id} cover={record.cover} title={record.title} />
+                        <Fiche key={record.id} id={record.id} cover={record.cover} title={record.title} />
                     )
                 })
             }

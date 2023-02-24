@@ -4,7 +4,7 @@ import '../styles/Navbar.css'
 
 function Banner() {
 	return (
-        <div className='banner'>
+        <div className='navbar'>
             <img src={logo} alt='Logo du site Kasa' />
             <nav>
                 <ul>
