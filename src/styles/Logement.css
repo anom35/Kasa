@@ -1,3 +1,59 @@
 .logement {
     margin: 10px 100px;
 }
+
+.ficheLogement {
+    display: flex;
+}
+
+.ficheLogement img {
+    display: flex;
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0px 0px 25px 25px;
+}
+
+.ficheLogement h1,
+h4 {
+    color: var(--colorRed);
+}
+
+.div-tags {
+    display: flex;
+    gap: 20px;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+    height: 25px;
+    font-size: 14px;
+    background-color: var(--colorRed);
+    color: white;
+    border-radius: 10px;
+}
+
+.div-etoiles {
+    display: flex;
+    gap: 10px;
+    color: var(--colorRed);
+    width: 167px;
+}
+
+.div-etoiles p {
+    font-size: 18px;
+    width: 93px;
+    height: 52px;
+}
+
+.div-etoiles img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.div-description {
+    width: 100%;
+}
