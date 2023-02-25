@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useSearchParams } from 'react-router-dom';
+import Dropdown from 'react-dropdown';
 import Navbar from "./Navbar"
+import Banner from './Banner';
 import "../styles/Logement.css"
 
-function Logement({idLogement}) {
+function Logement() {
+    const [searchParams] = useSearchParams();
+    const [query] = useState(searchParams.get('_id'));
+    
     return (
-        <div>
+        <div className='logement'>
             <Navbar />
-            Logement: {idLogement}
-            {console.log(idLogement)}
+            <Banner />
+            <Dropdown />
         </div>
     )
 }
