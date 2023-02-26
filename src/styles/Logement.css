@@ -2,16 +2,16 @@
     margin: 10px 100px;
 }
 
-.ficheLogement {
-    display: flex;
-}
-
-.ficheLogement img {
+.carrousel-logement img {
     display: flex;
     height: 415px;
     width: 100%;
     object-fit: cover;
     border-radius: 0px 0px 25px 25px;
+}
+
+.ficheLogement {
+    display: flex;
 }
 
 .ficheLogement h1,
@@ -22,6 +22,7 @@ h4 {
 .div-tags {
     display: flex;
     gap: 20px;
+    white-space: nowrap;
 }
 
 .tags {
@@ -46,14 +47,32 @@ h4 {
     font-size: 18px;
     width: 93px;
     height: 52px;
+    padding-top: 10px;
+    text-align: right;
 }
 
 .div-etoiles img {
     width: 64px;
     height: 64px;
     border-radius: 50%;
+    padding-top: 15px;
 }
 
 .div-description {
     width: 100%;
+}
+
+.stars {
+    display: flex;
+    justify-content: right;
+    width: 167px;
+    gap: 10px;
+}
+
+.span1 {
+    color: var(--colorRed);
+}
+
+.span2 {
+    color: #E3E3E3;
 }

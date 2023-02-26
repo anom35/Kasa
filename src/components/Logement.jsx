@@ -1,25 +1,34 @@
 import React, { useState } from 'react'
 import { useSearchParams } from 'react-router-dom';
 import Dropdown from 'react-dropdown';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faStar as etoilePleine } from '@fortawesome/free-solid-svg-icons'
+import { faStar as etoileVide } from '@fortawesome/free-regular-svg-icons'
+
 import Navbar from "./Navbar"
 import Footer from "./Footer"
-import Stars from "./Stars"
+
 import "../styles/Navbar.css"
 import "../styles/Logement.css"
 import records from "../datas/logements.json"
+library.add(etoilePleine, etoileVide)
 
 function Logement() {
     const [searchParams] = useSearchParams();
     const [query] = useState(searchParams.get('_id'));
     const record = records.find(element => element.id === query)
-    
-    let cpt = 0;
+    const arrayStars = [1, 2, 3, 4, 5]
+
     if (record !== undefined) {
         return (
             <div>
                 <div className='logement'>
                     <Navbar />
-                    <img src={record.cover} alt={record.title} />
+                    <div className='carrousel-logement'>
+                        <img src={record.cover} alt={record.title} />
+                    </div>
                     <div className='ficheLogement'>
                         <div className='div-description'>
                             <h1>{record.title}</h1>
@@ -27,18 +36,39 @@ function Logement() {
                             <div className='div-tags'>
                                 {
                                     record.tags.map(element => {
-                                        cpt += 1;
-                                        return(<p className='tags' key={cpt}>{element}</p>)
+                                        return(<p className='tags' key={Math.random()}>{element}</p>)
                                     })
                                 }
                             </div>
                         </div>
-                        <div className='div-etoiles'>
+                        <div>
+                            <div className='div-etoiles'>
                                 <p>{record.host.name}</p>
                                 <img src={record.host.picture} alt={record.title} />
+                            </div>
+                            
+                            <div className='stars'>
+                                {
+                                    arrayStars.map(element => {
+                                        const nbreEtoiles = parseInt(record.rating)
+                                        if (element <= nbreEtoiles) {
+                                            return(
+                                                <span className='span1'>
+                                                    <FontAwesomeIcon key={Math.random()} icon={etoilePleine} />
+                                                </span>
+                                            )
+                                        } else {
+                                            return(
+                                                <span className='span2'>
+                                                    <FontAwesomeIcon key={Math.random()} icon={etoilePleine} />
+                                                </span>
+                                            )
+                                        }
+                                    })
+                                }
+                            </div>
                         </div>
                     </div>
-                    <Stars rating={record.rating} />
                     <Dropdown options={record.description}>Description</Dropdown>
                 </div>
                 <Footer />
