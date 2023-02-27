@@ -20,7 +20,7 @@ function Logement() {
     const [query] = useState(searchParams.get('_id'));
     const record = records.find(element => element.id === query)
     const arrayStars = [1, 2, 3, 4, 5]
-
+   
     if (record !== undefined) {
         return (
             <div>
@@ -35,8 +35,8 @@ function Logement() {
                             <h4>{record.location}</h4>
                             <div className='div-tags'>
                                 {
-                                    record.tags.map(element => {
-                                        return(<p className='tags' key={Math.random()}>{element}</p>)
+                                    record.tags.map((element, index) => {
+                                        return(<p className='tags' key={"tags-"+index.toString()}>{element}</p>)
                                     })
                                 }
                             </div>
@@ -49,19 +49,24 @@ function Logement() {
                             
                             <div className='stars'>
                                 {
+                                    
                                     arrayStars.map(element => {
                                         const nbreEtoiles = parseInt(record.rating)
                                         if (element <= nbreEtoiles) {
                                             return(
-                                                <span className='span1'>
-                                                    <FontAwesomeIcon key={Math.random()} icon={etoilePleine} />
-                                                </span>
+                                                    <FontAwesomeIcon 
+                                                        key={"fa_"+Math.random().toString()} 
+                                                        icon={etoilePleine} 
+                                                        className="span1"
+                                                    />
                                             )
                                         } else {
                                             return(
-                                                <span className='span2'>
-                                                    <FontAwesomeIcon key={Math.random()} icon={etoilePleine} />
-                                                </span>
+                                                    <FontAwesomeIcon 
+                                                        key={"fa_"+Math.random().toString()} 
+                                                        icon={etoilePleine}
+                                                        className="span2"
+                                                    />
                                             )
                                         }
                                     })
