@@ -76,3 +76,51 @@ h4 {
 .span2 {
     color: #E3E3E3;
 }
+
+.collapses {
+    display: flex;
+    gap: 76px;
+    margin-top: 10px;
+}
+
+.collapses>div {
+    width: 100%;
+}
+
+.description-header,
+.equipement-header {
+    background-color: var(--colorRed);
+    color: white;
+    font-size: 18px;
+    padding: 17px 0px 17px 20px;
+    border-radius: 10px;
+    margin-bottom: -10px;
+}
+
+.fond-description {
+    position: relative;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    height: 249px;
+    z-index: -1;
+}
+
+.description-content,
+.equipement-content {
+    margin: 0px;
+    color: var(--colorRed);
+}
+
+.description-content {
+    padding: 40px 12px 0px 20px;
+}
+
+.equipement-content {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 12px;
+}
+
+.equipement-content:first-child {
+    padding: 40px 12px 0px 20px;
+}
