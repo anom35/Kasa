@@ -1,0 +1,7 @@
+.ReactCollapse--collapse {
+    color: white;
+    background-color: var(--colorRed);
+    padding: 13px 0px 13px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+}

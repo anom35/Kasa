@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from './Navbar'
+import Navbar from '../components/Navbar'
 // import { useRouteError } from "react-router-dom";
 import "../styles/Error404.css"
-import Footer from './Footer';
+import Footer from '../components/Footer';
 
 function Error404() {
     // const error = useRouteError();

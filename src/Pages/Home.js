@@ -1,9 +1,9 @@
 // import { useState, useEffect } from 'react'
-import Navbar from './Navbar'
-import Banner from './Banner'
-import Logements from './Logements'
-import Footer from './Footer'
-import Main from './Main'
+import Navbar from '../components/Navbar'
+import Banner from '../components/Banner'
+import Logements from '../components/Logements'
+import Footer from '../components/Footer'
+import Main from '../components/Main'
 import '../styles/Home.css';
 import '../styles/Style.css';
 

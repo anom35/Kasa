@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
 import { useSearchParams } from 'react-router-dom';
-import Dropdown from 'react-dropdown';
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faStar as etoilePleine } from '@fortawesome/free-solid-svg-icons'
 import { faStar as etoileVide } from '@fortawesome/free-regular-svg-icons'
 
-import Navbar from "./Navbar"
-import Footer from "./Footer"
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
+import CreateCollapse from '../components/Collapse';
 
 import "../styles/Navbar.css"
 import "../styles/Logement.css"
@@ -73,11 +72,10 @@ function Logement() {
                             </div>
                         </div>
                     </div>
-                    {/* collapse */}
-                    <Dropdown 
-                            options={record.description}
-                            placeholder="Description"
-                        />
+                    <div className='collapses'>
+                        <CreateCollapse titre="Description" description={record.description} />
+                        <CreateCollapse titre="Équipements" description={record.equipments} />
+                    </div>
                 </div>
                 <Footer />
             </div>

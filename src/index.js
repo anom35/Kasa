@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import './styles/index.css';
-import Home from './components/Home';
-import Error404 from './components/Error404';
-import About from './components/About';
-import Logement from './components/Logement';
+import Home from './Pages/Home';
+import Error404 from './Pages/Error404';
+import About from './Pages/About';
+import Logement from './Pages/Logement';
 
 
 // création des routes
