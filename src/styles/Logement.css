@@ -87,14 +87,30 @@ h4 {
     width: 100%;
 }
 
+
 .description-header,
-.equipement-header {
+.equipements-header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 28px;
     background-color: var(--colorRed);
     color: white;
     font-size: 18px;
     padding: 17px 0px 17px 20px;
     border-radius: 10px;
     margin-bottom: -10px;
+    align-items: center;
+}
+
+.fa-chevron-up {
+    padding-right: 12px;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.description-chevron {
+    align-items: center;
 }
 
 .fond-description {

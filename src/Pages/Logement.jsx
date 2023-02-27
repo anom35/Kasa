@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faStar as etoilePleine } from '@fortawesome/free-solid-svg-icons'
 import { faStar as etoileVide } from '@fortawesome/free-regular-svg-icons'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
@@ -73,14 +74,34 @@ function Logement() {
                         </div>
                     </div>
                     <div className='collapses'>
+
                         <div className='description'>
-                            <p className='description-header'>Description</p>
+                            <div className='description-header'>
+                                <div>Description</div>
+                                <div className='description-chevron'>
+                                    <FontAwesomeIcon 
+                                        key={"fa_"+Math.random().toString()} 
+                                        icon={faChevronUp}
+                                        className="fa-chevron-up"
+                                    />
+                                </div>
+                            </div>
                             <div className='fond-description'>
                                 <p className='description-content'>{record.description}</p>
                             </div>
                         </div>
+
                         <div className='equipements'>
-                            <p className='equipement-header'>Équipements</p>
+                            <div className='equipements-header'>
+                                <div>Équipements</div>
+                                <div className='description-chevron'>
+                                    <FontAwesomeIcon 
+                                        key={"fa_"+Math.random().toString()} 
+                                        icon={faChevronUp}
+                                        className="fa-chevron-up"
+                                    />
+                                </div>
+                            </div>
                             <div className='fond-description'>
                                 {
                                     record.equipments.map((element, index) => {
@@ -89,6 +110,7 @@ function Logement() {
                                 }
                             </div>
                         </div>
+
                     </div>
                 </div>
                 <Footer />
