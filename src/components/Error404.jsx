@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 // import { useRouteError } from "react-router-dom";
 import "../styles/Error404.css"
+import Footer from './Footer';
 
 function Error404() {
     // const error = useRouteError();
@@ -9,7 +10,8 @@ function Error404() {
     return (
         <div className='error404'>
             <Navbar />   
-            <p>404</p>     
+            <p>404</p> 
+            <Footer />    
         </div>
     )
 }

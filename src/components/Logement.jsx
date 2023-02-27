@@ -49,24 +49,23 @@ function Logement() {
                             
                             <div className='stars'>
                                 {
-                                    
                                     arrayStars.map(element => {
                                         const nbreEtoiles = parseInt(record.rating)
                                         if (element <= nbreEtoiles) {
                                             return(
-                                                    <FontAwesomeIcon 
-                                                        key={"fa_"+Math.random().toString()} 
-                                                        icon={etoilePleine} 
-                                                        className="span1"
-                                                    />
+                                                <FontAwesomeIcon 
+                                                    key={"fa_"+Math.random().toString()} 
+                                                    icon={etoilePleine} 
+                                                    className="span1"
+                                                />
                                             )
                                         } else {
                                             return(
-                                                    <FontAwesomeIcon 
-                                                        key={"fa_"+Math.random().toString()} 
-                                                        icon={etoilePleine}
-                                                        className="span2"
-                                                    />
+                                                <FontAwesomeIcon 
+                                                    key={"fa_"+Math.random().toString()} 
+                                                    icon={etoilePleine}
+                                                    className="span2"
+                                                />
                                             )
                                         }
                                     })
@@ -74,7 +73,11 @@ function Logement() {
                             </div>
                         </div>
                     </div>
-                    <Dropdown options={record.description}>Description</Dropdown>
+                    {/* collapse */}
+                    <Dropdown 
+                            options={record.description}
+                            placeholder="Description"
+                        />
                 </div>
                 <Footer />
             </div>
