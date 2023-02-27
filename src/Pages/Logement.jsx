@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useSearchParams } from 'react-router-dom';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faStar as etoilePleine } from '@fortawesome/free-solid-svg-icons'
@@ -7,7 +8,6 @@ import { faStar as etoileVide } from '@fortawesome/free-regular-svg-icons'
 
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import CreateCollapse from '../components/Collapse';
 
 import "../styles/Navbar.css"
 import "../styles/Logement.css"
@@ -73,8 +73,22 @@ function Logement() {
                         </div>
                     </div>
                     <div className='collapses'>
-                        <CreateCollapse titre="Description" description={record.description} />
-                        <CreateCollapse titre="Équipements" description={record.equipments} />
+                        <div className='description'>
+                            <p className='description-header'>Description</p>
+                            <div className='fond-description'>
+                                <p className='description-content'>{record.description}</p>
+                            </div>
+                        </div>
+                        <div className='equipements'>
+                            <p className='equipement-header'>Équipements</p>
+                            <div className='fond-description'>
+                                {
+                                    record.equipments.map((element, index) => {
+                                        return(<p className='equipement-content' key={"equip-"+index.toString()}>{element}</p>)
+                                    })
+                                }
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <Footer />

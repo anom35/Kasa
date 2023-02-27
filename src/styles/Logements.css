@@ -24,6 +24,34 @@
     width: 100%;
 }
 
+.description-header,
+.equipement-header {
+    background-color: var(--colorRed);
+    color: white;
+    font-size: 18px;
+    padding: 17px 0px 17px 20px;
+    border-radius: 10px;
+    margin-bottom: -10px;
+    z-index: 0;
+}
+
+.fond-description {
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    height: 249px;
+}
+
+.description-content,
+.equipement-content {
+    margin: 0px;
+    padding: 40px 12px 0px 20px;
+
+}
+
+.equipement-content {
+    margin: 0;
+}
+
 @media (max-width: 660px) {
     .logements {
         background: #FFF;
