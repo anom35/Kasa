@@ -7,7 +7,7 @@
     height: 415px;
     width: 100%;
     object-fit: cover;
-    border-radius: 0px 0px 25px 25px;
+    border-radius: 25px;
 }
 
 .ficheLogement {
@@ -23,6 +23,7 @@ h4 {
     display: flex;
     gap: 20px;
     white-space: nowrap;
+    flex-wrap: wrap;
 }
 
 .tags {
@@ -65,7 +66,7 @@ h4 {
 .stars {
     display: flex;
     justify-content: right;
-    width: 167px;
+    width: 130px;
     gap: 10px;
 }
 
@@ -140,4 +141,73 @@ h4 {
 
 .equipement-content:first-child {
     padding: 40px 12px 0px 20px;
+}
+
+
+
+
+/* Média query */
+
+
+@media (max-width: 856px) {
+
+    .ficheLogement,
+    .collapses {
+        display: block;
+    }
+
+    .description {
+        margin-bottom: 30px;
+    }
+
+    .bloc-stars {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .stars {
+        align-items: center;
+        justify-content: left;
+    }
+}
+
+@media (max-width: 686px) {
+    .tags {
+        font-size: 10px;
+    }
+
+    .div-tags {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .logement {
+        margin: 10px 20px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .description-content,
+    .equipement-content {
+        font-size: 12px;
+    }
+
+    .description-header,
+    .equipements-header {
+        font-size: 13px;
+        padding: 8px 0px 8px 20px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .stars {
+        font-size: 15px;
+        gap: 5px;
+    }
+
 }

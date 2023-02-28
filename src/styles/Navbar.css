@@ -35,6 +35,14 @@
 }
 
 
+
+@media (max-width: 500px) {
+    .navbar nav a {
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+}
+
 @media (min-width: 451px) and (max-width: 480px) {
     .navbar nav a {
         font-size: 18px;
@@ -43,7 +51,7 @@
 
 @media (max-width: 450px) {
     .navbar nav a {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .navbar ul {

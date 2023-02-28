@@ -41,7 +41,7 @@ function Logement() {
                                 }
                             </div>
                         </div>
-                        <div>
+                        <div className='bloc-stars'>
                             <div className='div-etoiles'>
                                 <p>{record.host.name}</p>
                                 <img src={record.host.picture} alt={record.title} />

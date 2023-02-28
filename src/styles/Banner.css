@@ -45,4 +45,8 @@
     .banner h1 {
         font-size: 1rem;
     }
+
+    .banner {
+        height: 255px;
+    }
 }
