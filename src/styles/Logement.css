@@ -2,6 +2,13 @@
     margin: 10px 100px;
 }
 
+.logement button {
+    color: red;
+    font-size: 60px;
+    border: none;
+    background: none;
+}
+
 .carrousel-logement img {
     display: flex;
     height: 415px;
@@ -21,7 +28,6 @@ h4 {
 
 .div-tags {
     display: flex;
-    gap: 20px;
     white-space: nowrap;
     flex-wrap: wrap;
 }
@@ -30,6 +36,7 @@ h4 {
     display: flex;
     align-items: center;
     padding-inline: 20px;
+    margin: 10px 20px 0 0;
     height: 25px;
     font-size: 14px;
     background-color: var(--colorRed);
@@ -119,7 +126,8 @@ h4 {
     position: relative;
     background-color: #F7F7F7;
     border-radius: 10px;
-    height: 249px;
+    /* height: 249px; */
+    padding-bottom: 20px;
     z-index: -1;
 }
 
@@ -208,6 +216,38 @@ h4 {
     .stars {
         font-size: 15px;
         gap: 5px;
+    }
+
+    .carrousel-logement img {
+        height: 255px;
+    }
+
+    .div-description h1 {
+        font-size: 18px;
+    }
+
+    .div-description h4 {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .div-etoiles {
+        align-items: center;
+    }
+
+    .div-etoiles img {
+        width: 45px;
+        height: 45px;
+        margin: 0;
+    }
+
+    .div-etoiles p {
+        display: flex;
+        justify-content: right;
+        font-size: 12px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
     }
 
 }

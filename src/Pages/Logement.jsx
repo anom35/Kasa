@@ -6,9 +6,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faStar as etoilePleine } from '@fortawesome/free-solid-svg-icons'
 import { faStar as etoileVide } from '@fortawesome/free-regular-svg-icons'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import Carousel from '../components/Carousel';
 
 import "../styles/Navbar.css"
 import "../styles/Logement.css"
@@ -20,15 +23,27 @@ function Logement() {
     const [query] = useState(searchParams.get('_id'));
     const record = records.find(element => element.id === query)
     const arrayStars = [1, 2, 3, 4, 5]
+    let position = 1
    
     if (record !== undefined) {
         return (
             <div>
                 <div className='logement'>
                     <Navbar />
-                    <div className='carrousel-logement'>
-                        <img src={record.cover} alt={record.title} />
-                    </div>
+                    <Carousel id={record.id} position={position} />
+                    <button>
+                        <FontAwesomeIcon 
+                            key={"btn_"+Math.random().toString()} 
+                            icon={faChevronLeft}
+                        />
+                    </button>
+                    <button>
+                        <FontAwesomeIcon 
+                            key={"btn_"+Math.random().toString()} 
+                            icon={faChevronRight}
+                        />
+                    </button>
+
                     <div className='ficheLogement'>
                         <div className='div-description'>
                             <h1>{record.title}</h1>
