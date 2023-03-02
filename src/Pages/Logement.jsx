@@ -29,102 +29,97 @@ function Logement() {
         return (
             <div>
                 <div className='logement'>
-                    <Navbar />
+                <Navbar />
+                <div>
                     <Carousel id={record.id} position={position} />
-                    <button>
-                        <FontAwesomeIcon 
-                            key={"btn_"+Math.random().toString()} 
-                            icon={faChevronLeft}
-                        />
+                    <button className='button-left' onClick={() =>Carousel(record.id, position--)}>
+                        <FontAwesomeIcon key={"btn_"+Math.random().toString()} icon={faChevronLeft} />
                     </button>
-                    <button>
-                        <FontAwesomeIcon 
-                            key={"btn_"+Math.random().toString()} 
-                            icon={faChevronRight}
-                        />
+                    <button className='button-right' onClick={Carousel(record.id, position++)}>
+                        <FontAwesomeIcon key={"btn_"+Math.random().toString()} icon={faChevronRight} />
                     </button>
-
-                    <div className='ficheLogement'>
-                        <div className='div-description'>
-                            <h1>{record.title}</h1>
-                            <h4>{record.location}</h4>
-                            <div className='div-tags'>
-                                {
-                                    record.tags.map((element, index) => {
-                                        return(<p className='tags' key={"tags-"+index.toString()}>{element}</p>)
-                                    })
-                                }
-                            </div>
-                        </div>
-                        <div className='bloc-stars'>
-                            <div className='div-etoiles'>
-                                <p>{record.host.name}</p>
-                                <img src={record.host.picture} alt={record.title} />
-                            </div>
-                            
-                            <div className='stars'>
-                                {
-                                    arrayStars.map(element => {
-                                        const nbreEtoiles = parseInt(record.rating)
-                                        if (element <= nbreEtoiles) {
-                                            return(
-                                                <FontAwesomeIcon 
-                                                    key={"fa_"+Math.random().toString()} 
-                                                    icon={etoilePleine} 
-                                                    className="span1"
-                                                />
-                                            )
-                                        } else {
-                                            return(
-                                                <FontAwesomeIcon 
-                                                    key={"fa_"+Math.random().toString()} 
-                                                    icon={etoilePleine}
-                                                    className="span2"
-                                                />
-                                            )
-                                        }
-                                    })
-                                }
-                            </div>
+                </div>
+                <div className='ficheLogement'>
+                    <div className='div-description'>
+                        <h1>{record.title}</h1>
+                        <h4>{record.location}</h4>
+                        <div className='div-tags'>
+                            {
+                                record.tags.map((element, index) => {
+                                    return(<p className='tags' key={"tags-"+index.toString()}>{element}</p>)
+                                })
+                            }
                         </div>
                     </div>
-                    <div className='collapses'>
+                    <div className='bloc-stars'>
+                        <div className='div-etoiles'>
+                            <p>{record.host.name}</p>
+                            <img src={record.host.picture} alt={record.title} />
+                        </div>
+                        
+                        <div className='stars'>
+                            {
+                                arrayStars.map(element => {
+                                    const nbreEtoiles = parseInt(record.rating)
+                                    if (element <= nbreEtoiles) {
+                                        return(
+                                            <FontAwesomeIcon 
+                                                key={"fa_"+Math.random().toString()} 
+                                                icon={etoilePleine} 
+                                                className="span1"
+                                            />
+                                        )
+                                    } else {
+                                        return(
+                                            <FontAwesomeIcon 
+                                                key={"fa_"+Math.random().toString()} 
+                                                icon={etoilePleine}
+                                                className="span2"
+                                            />
+                                        )
+                                    }
+                                })
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div className='collapses'>
 
-                        <div className='description'>
-                            <div className='description-header'>
-                                <div>Description</div>
-                                <div className='description-chevron'>
-                                    <FontAwesomeIcon 
-                                        key={"fa_"+Math.random().toString()} 
-                                        icon={faChevronUp}
-                                        className="fa-chevron-up"
-                                    />
-                                </div>
-                            </div>
-                            <div className='fond-description'>
-                                <p className='description-content'>{record.description}</p>
+                    <div className='description'>
+                        <div className='description-header'>
+                            <div>Description</div>
+                            <div className='description-chevron'>
+                                <FontAwesomeIcon 
+                                    key={"fa_"+Math.random().toString()} 
+                                    icon={faChevronUp}
+                                    className="fa-chevron-up"
+                                />
                             </div>
                         </div>
+                        <div className='fond-description'>
+                            <p className='description-content'>{record.description}</p>
+                        </div>
+                    </div>
 
-                        <div className='equipements'>
-                            <div className='equipements-header'>
-                                <div>Équipements</div>
-                                <div className='description-chevron'>
-                                    <FontAwesomeIcon 
-                                        key={"fa_"+Math.random().toString()} 
-                                        icon={faChevronUp}
-                                        className="fa-chevron-up"
-                                    />
-                                </div>
-                            </div>
-                            <div className='fond-description'>
-                                {
-                                    record.equipments.map((element, index) => {
-                                        return(<p className='equipement-content' key={"equip-"+index.toString()}>{element}</p>)
-                                    })
-                                }
+                    <div className='equipements'>
+                        <div className='equipements-header'>
+                            <div>Équipements</div>
+                            <div className='description-chevron'>
+                                <FontAwesomeIcon 
+                                    key={"fa_"+Math.random().toString()} 
+                                    icon={faChevronUp}
+                                    className="fa-chevron-up"
+                                />
                             </div>
                         </div>
+                        <div className='fond-description'>
+                            {
+                                record.equipments.map((element, index) => {
+                                    return(<p className='equipement-content' key={"equip-"+index.toString()}>{element}</p>)
+                                })
+                            }
+                        </div>
+                    </div>
 
                     </div>
                 </div>

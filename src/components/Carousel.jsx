@@ -1,9 +1,12 @@
 import React from 'react'
-import "../styles/Carousel.css"
 import records from "../datas/logements.json"
 
 function Carousel({ id, position }) {
-    console.log(id, " - ", position)
+
+    // const [position, setCount] = useState(0);
+
+
+
     const fiche = records.find(element => element.id === id)
     if (fiche !== undefined) {
         let max = fiche.pictures.length

@@ -2,11 +2,25 @@
     margin: 10px 100px;
 }
 
-.logement button {
-    color: red;
+.button-left,
+.button-right {
+    position: absolute;
+    content: "";
+    color: white;
     font-size: 60px;
     border: none;
     background: none;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+}
+
+.button-left {
+    left: 100px;
+}
+
+.button-right {
+    right: 100px;
 }
 
 .carrousel-logement img {
@@ -15,6 +29,7 @@
     width: 100%;
     object-fit: cover;
     border-radius: 25px;
+    position: relative;
 }
 
 .ficheLogement {
@@ -126,7 +141,6 @@ h4 {
     position: relative;
     background-color: #F7F7F7;
     border-radius: 10px;
-    /* height: 249px; */
     padding-bottom: 20px;
     z-index: -1;
 }

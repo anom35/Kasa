@@ -15,10 +15,10 @@ root.render(
     <React.StrictMode>
         <Router>
             <Routes>
-                <Route exact path='/' element={<Home />} />
-                <Route path='/Logement' element={<Logement />} />
-                <Route path='/About' element={<About />} />
-                <Route path='*' element={<Error404 />} />
+                <Route exact path='/' element={<Home />} errorElement={<Error404 />} />
+                <Route path='/Logement' element={<Logement />} errorElement={<Error404 />} />
+                <Route path='/About' element={<About />} errorElement={<Error404 />} />
+                {/* <Route path='/' errorElement={<Error404 />} /> */}
             </Routes> 
         </Router>
     </React.StrictMode>
