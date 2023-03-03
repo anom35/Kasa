@@ -18,7 +18,7 @@ root.render(
                 <Route exact path='/' element={<Home />} errorElement={<Error404 />} />
                 <Route path='/Logement' element={<Logement />} errorElement={<Error404 />} />
                 <Route path='/About' element={<About />} errorElement={<Error404 />} />
-                {/* <Route path='/' errorElement={<Error404 />} /> */}
+                <Route path='*' errorElement={<Error404 />} />
             </Routes> 
         </Router>
     </React.StrictMode>
